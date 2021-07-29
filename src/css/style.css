@@ -1,0 +1,554 @@
+@font-face {
+  font-family: 'AdobeHandwriting';
+  src: url(/src/Fonts/AdobeHandwriting-Ernie.ttf);
+}
+@font-face {
+  font-family: 'GillSansNova';
+  src: url(/src/Fonts/GillSansNova-Book.ttf);
+}
+body {
+  background-color: #f5f5f5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: GillSansNova;
+}
+a:visited{
+  color:#44701C;
+}
+.btn {
+  outline: none;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 924px;
+  margin: 0 auto;
+}
+.image_top_left {
+  position: absolute;
+  background-image: url(../img/leaves_top_23.png);
+  top: 0;
+  left: 0;
+  width: 1096px;
+  height: 763px;
+  z-index: -1;
+}
+.image_top_right {
+  position: absolute;
+  background-image: url(../img/cucumber_lemon__18.png);
+  top: 190px;
+  right: 0;
+  width: 676px;
+  height: 781px;
+  z-index: -1;
+}
+.mail_top {
+  position: absolute;
+  background-image: url(../img/mail_159.png);
+  width: 24px;
+  height: 19px;
+  left: 4px;
+  top: -5px;
+  opacity: 0.2;
+}
+.insta_top {
+  position: absolute;
+  background-image: url(../img/insta_163.png);
+  width: 24px;
+  height: 24px;
+  left: 50px;
+  top: -8px;
+  opacity: 0.2;
+}
+.mat {
+  position: absolute;
+  background-image: url(../img/mat_13.png);
+  left: -397px;
+  top: 432px;
+  width: 319px;
+  height: 652px;
+  z-index: -1;
+}
+.logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 21px;
+}
+nav > .nav_wrapper > ul {
+  background-color: #f5f5f5;
+  z-index: 1;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f5f5f5;
+  border-top: 1px solid #f5f5f5;
+  border-left: 1px solid #f5f5f5;
+  border-bottom: 3px solid #f7f7f7;
+  box-shadow: 0 -3px #e8e8e8 inset;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+nav > .nav_wrapper > ul > li {
+  list-style: none;
+  letter-spacing: 7px;
+  letter-spacing: 0.22em;
+}
+a {
+  text-decoration: none;
+}
+.dot {
+  font-size: 26px;
+  font-weight: 00;
+  color: #44701c;
+  margin-top: -10px;
+}
+.content_block {
+  flex-direction: column;
+  margin-top: 62px;
+  margin-bottom: 113px;
+}
+.main_text {
+  margin-top: -10px;
+  margin-bottom: 50px;
+  max-width: 945px;
+}
+.main_text > p {
+  text-align: center;
+  font-size: 82px;
+  line-height: 77px;
+  color: #096465;
+}
+.main_btn_block {
+  display: flex;
+  justify-content: center;
+}
+.block_in_btn {
+  border: 1px solid #f5f5f5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  height: 54px;
+  display: flex;
+  justify-content: center;
+  /* box-shadow:
+  inset rgba(0,0,0,.5) -1px -1px 3px,
+  inset rgba(255,255,255,.9) 3px 3px 8px,
+  rgba(0,0,0,.8) 3px 3px 8px -3px; */
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.5); */
+}
+
+.find_btn {
+  width: 230px;
+  height: 40px;
+  margin-top: 7px;
+  background-color: #cbde95;
+  font-size: 18px;
+  border: none;
+  font-family: GillSansNova;
+  font-size: 18px;
+  line-height: 42px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #4b4c4b;
+}
+.find_btn > span {
+  /* margin: 8px; */
+}
+.FIND_OUT {
+  margin-left: 7px;
+  margin-right: 7px;
+}
+.White {
+  color: #fff;
+}
+.main_text_block {
+  background-color: #f5f5f5;
+  position: relative;
+  border: 1px solid rgb(214, 214, 214);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding-top: 52px;
+  margin-left: -7px;
+}
+.text_block {
+  width: 580px;
+  margin: 0 auto;
+}
+.top_text {
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 22px;
+}
+.top_text_head {
+  font-family: AdobeHandwriting;
+  font-size: 38px;
+  line-height: 33px;
+  font-weight: 400;
+  color: #096465;
+  margin-bottom: 20px;
+}
+.top_text_first_parag {
+  line-height: 28px;
+}
+.top_text_sec_parag {
+  margin-top: 17px;
+  line-height: 30px;
+}
+
+.four_small_leaves {
+  position: absolute;
+  background-image: url(../img/four_small_leaves_131.png);
+  width: 183px;
+  height: 118px;
+  right: 25px;
+  top: -30px;
+}
+.single_leaf {
+  position: absolute;
+  background-image: url(../img/single_leaf_132.png);
+  width: 97px;
+  height: 83px;
+  top: 310px;
+  left: 180px;
+}
+.text_photo_btn_border {
+  position: relative;
+  max-width: 725px;
+  margin: 0 auto;
+  background-color: #eef0eb;
+  padding-bottom: 30px;
+}
+.main_photo {
+  position: absolute;
+  background-image: url(../img/megan_123.png);
+  width: 256px;
+  height: 294px;
+  top: -57px;
+  left: -194px;
+  padding: 6px 7px;
+}
+.bd_inside_photo {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #fff;
+}
+.cup_photo {
+  position: absolute;
+  background-image: url(../img/cup_three_leaves_115.png);
+  width: 188px;
+  height: 194px;
+  left: 630px;
+  top: 290px;
+}
+.text_photo_btn {
+  margin-top: 93px;
+  width: 530px;
+  padding-top: 30px;
+}
+.text_photo_btn_bg {
+  font-size: 14px;
+  color: #096465;
+  margin-bottom: -15px;
+}
+.text_ghoto_btn_center {
+  text-align: center;
+}
+.text_photo_btn_about {
+  font-family: AdobeHandwriting;
+  margin-top: 5px;
+  font-size: 38px;
+  margin-bottom: -18px;
+}
+.text_photo_btn_first_parag {
+  line-height: 24px;
+  margin-bottom: 14px;
+}
+.text_photo_btn_sec_parag {
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+.text {
+  font-size: 15px;
+  /* увеличить! */
+}
+.text_photo_btn_bg {
+  font-size: 14px;
+  color: #096465;
+}
+.text_photo_btn_about {
+  font-size: 38px;
+  color: #096465;
+}
+.sec_btn_cont {
+  display: flex;
+  justify-content: center;
+}
+.sec_btn_border {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  margin-left: 5px;
+  border: 1px solid rgb(214, 214, 214);
+}
+.sec_btn {
+  margin-left: 4px;
+  margin-top: 11px;
+  margin-bottom: 11px;
+  width: 230px;
+  height: 39px;
+  background-color: rgba(155, 196, 42, 0.47);
+  font-size: 18px;
+  border: none;
+  font-family: GillSansNova;
+  font-size: 18px;
+  line-height: 42px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #4b4c4b;
+}
+.work_together {
+  position: relative;
+  margin-top: 38px;
+}
+.leaf_stalk_89 {
+  position: absolute;
+  background-image: url(../img/leaf_stalk_89.png);
+  top: -205px;
+  left: -194px;
+  width: 298px;
+  height: 424px;
+}
+.work_together_center {
+  text-align: center;
+}
+.work_together_head {
+  margin-bottom: -2px;
+  font-family: GillSansNova;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #096465;
+}
+.work_together_understanding {
+  font-family: AdobeHandwriting;
+  font-size: 36px;
+  color: #096465;
+}
+.work_together_first_parag {
+  max-width: 500px;
+  margin-top: -8px;
+  margin-bottom: 13px;
+  margin-left: 40px;
+  line-height: 25px;
+}
+.work_together_sec_parag {
+  font-size: 16px;
+  margin-left: 40px;
+  line-height: 25px;
+}
+.last_text_block_center {
+  display: flex;
+  justify-content: center;
+}
+.last_text_block_border {
+  position: relative;
+  max-width: 730px;
+  margin-top: 57px;
+  border: 1px solid green;
+  display: flex;
+  padding-right: 50px;
+}
+.leaf_before {
+  position: absolute;
+  background-image: url(../img/leaf_l_82.png);
+  width: 53px;
+  height: 63px;
+  left: 23px;
+  top: 29px;
+}
+.leaf_after {
+  position: absolute;
+  background-image: url(../img/leaf_r_78.png);
+  left: 653px;
+  top: 37px;
+  width: 50px;
+  height: 66px;
+}
+.small_jars_84 {
+  position: absolute;
+  background-image: url(../img/small_jars_84.png);
+  left: -156px;
+  top: 278px;
+  width: 291px;
+  height: 281px;
+}
+.leaves_btm_22 {
+  position: absolute;
+  top: 1670px;
+  right: 0;
+  background-image: url(../img/leaves_btm_22.png);
+  width: 1367px;
+  height: 1158px;
+  z-index: -1;
+}
+.last_text_block {
+  margin-top: 42px;
+  margin-left: 88px;
+}
+.last_text_block_green {
+  color: #448889;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.last_text_block_black {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 45px;
+}
+.see_btn_border {
+  margin-top: 57px;
+  margin-left: 10px;
+  border: 1px solid rgb(214, 214, 214);
+}
+.see_btn {
+  margin: 10px;
+  width: 300px;
+  height: 39px;
+  background-color: rgba(155, 196, 42, 0.47);
+  font-size: 18px;
+  border: none;
+  font-family: GillSansNova;
+  font-size: 18px;
+  line-height: 42px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: #4b4c4b;
+}
+.see_btn_block {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 85px;
+}
+
+footer {
+  width: 100%;
+  background-color: #ebf1e7;
+  height: 300px;
+  margin-top: 137px;
+}
+.foot_wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.logo_footer {
+  background-image: url(../img/FOOTER\ LOGO.png);
+  width: 310px;
+  background-size: auto;
+  background-position: center;
+  height: 80px;
+  margin-top: 19px;
+}
+.footer_top_cont {
+  display: flex;
+  justify-content: space-between;
+}
+.first_brand {
+  background-image: url(../img/Footer\ B.png);
+  width: 114px;
+  height: 33px;
+}
+.sec_brand {
+  background-image: url(../img/Footer\ A.png);
+  width: 93px;
+  height: 34px;
+  background-size: cover;
+  margin-left: 30px;
+}
+.third_brand {
+  background-image: url(../img/Footer\ C.png);
+  width: 45px;
+  height: 45px;
+  background-size: cover;
+  margin-left: 36px;
+  margin-top: -7px;
+}
+
+.brands {
+  display: flex;
+  margin-top: 25px;
+}
+.footer_bottom_cont {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 29px;
+  border-bottom: 1px solid #679c0a;
+  padding-bottom: 8px;
+}
+.based {
+  font-family: GillSansNova;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.006em;
+  color: #545252;
+}
+.contacts {
+  display: flex;
+}
+.gmail {
+  display: flex;
+}
+.phone {
+  display: flex;
+}
+.insta {
+  display: flex;
+}
+.gmail_img {
+  width: 24px;
+  height: 19px;
+  background-image: url();
+}
+.gmail_adress {
+  margin-left: 9px;
+}
+.phone_img {
+  width: 14px;
+  height: 25px;
+  background-image: url();
+  margin-top: -6px;
+  margin-left: 22px;
+  margin-right: 3px;
+}
+.insta_img {
+  width: 24px;
+  height: 24px;
+  background-image: url();
+  margin-top: -4px;
+  margin-right: 9px;
+  margin-left: 30px;
+}
+.foot_text {
+  font-family: GillSansNova;
+  font-size: 15px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 0.006em;
+  color: #545252;
+}
+.footer_img {
+  filter: grayscale(100%);
+}
+.footer_img:hover {
+  filter: grayscale(0%);
+}
